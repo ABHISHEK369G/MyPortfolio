@@ -66,7 +66,7 @@ gsap.to(".content h1:nth-child(1)", {
   scrollTrigger: {
     trigger: ".content h1:nth-child(1)",
     start: "bottom 30%",
-    end: "bottom top",
+    end: "bottom 2%",
     // markers:true ,
     scrub: 1,
   },
@@ -80,7 +80,7 @@ gsap.to(".content h1:nth-child(2)", {
   scrollTrigger: {
     trigger: ".content h1:nth-child(2)",
     start: "top 30%",
-    end: "top top",
+    end: "top 2%",
     // markers:true ,
     scrub: 1,
   },
