@@ -236,13 +236,7 @@ a {
   filter: drop-shadow(0 0 20px rgb(143, 138, 138));
 }
 
-/* filter: drop-shadow(0 0 4px rgb(186, 102, 255));
-  }
-  50% {
-    filter: drop-shadow(0 0 8px rgb(20, 138, 235));
-  }
-  100% {
-    filter: drop-shadow(0 0 5px rgb(243, 77, 207)); */
+
 .page3 {
   padding: 3vw 6vw;
   min-height: 100vh;

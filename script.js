@@ -35,14 +35,14 @@ t1.from(".middle", {
   opacity: 0,
 });
 
-t1.from(".link h2", {
-  y: -100,
-  stagger: 0.2,
+// t1.from(".link h2", {
+//   y: -100,
+//   stagger: 0.2,
 
-  opacity: 0,
+//   opacity: 0,
 
-  // ease:'bounce.out',
-});
+//   // ease:'bounce.out',
+// });
 
 //animation for page1 ==============================
 var t2 = gsap.timeline();
@@ -186,20 +186,46 @@ gsap.from(".page4 h1:nth-child(1)", {
   },
 });
 
-gsap.from(".project", {
-  y: 500,
+gsap.from(".project:nth-child(1)", {
+  x:500,
   opacity: 0,
-  stagger: 2,
-  duration: 6,
+ 
+  duration: 5,
   scrollTrigger: {
-    trigger: ".project",
-    start: "top 85%",
-    end: "top 40%",
+    trigger: ".project:nth-child(1)",
+    start: "top 90%",
+    end: "top 65%",
+    // markers:true ,
+    scrub: 1,
+  },
+});
+gsap.from(".project:nth-child(2)", {
+  x: 500,
+  opacity: 0,
+ 
+  duration: 5,
+  scrollTrigger: {
+    trigger: ".project:nth-child(2)",
+    start: "top 70%",
+    end: "top 55%",
     // markers:true ,
     scrub: 1,
   },
 });
 
+gsap.from(".project:nth-child(3)", {
+  x: 500,
+  opacity: 0,
+ 
+  duration: 5,
+  scrollTrigger: {
+    trigger: ".project:nth-child(3)",
+    start: "top 60%",
+    end: "top 45%",
+    // markers:true ,
+    scrub: 1,
+  },
+});
 gsap.from(".footer ", {
   y: 20,
   opacity: 0,
