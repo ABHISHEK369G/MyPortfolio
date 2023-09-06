@@ -389,6 +389,7 @@ a {
 }
 
 .pright ul li {
+  list-style-type: none;
   font-size: 1rem;
   margin-bottom: 0.5rem;
   color: rgb(73, 73, 73);
@@ -532,7 +533,7 @@ a {
     margin-bottom: 40px;
   }
   .project {
-    width: 90%;
+    width: 82%;
     height: 32rem;
   }
   .footer {
