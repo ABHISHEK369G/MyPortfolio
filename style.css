@@ -69,7 +69,8 @@ a {
   display: flex;
   flex-wrap: wrap;
   position: fixed;
-  top: 0;
+  top: 10px;
+  left: 10px;
   z-index: 99;
 }
 .middle {
