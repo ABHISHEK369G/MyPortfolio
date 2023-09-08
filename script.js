@@ -59,8 +59,7 @@ t2.from(".content h1", {
 
 //animation for name
 gsap.to(".content h1:nth-child(1)", {
-  x: -1000,
-
+  x: -800,
   duration: 5,
 
   scrollTrigger: {
@@ -73,8 +72,7 @@ gsap.to(".content h1:nth-child(1)", {
 });
 
 gsap.to(".content h1:nth-child(2)", {
-  x: 1000,
-
+  x: 800,
   duration: 5,
 
   scrollTrigger: {
