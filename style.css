@@ -57,7 +57,7 @@ a {
   position: relative;
 }
 .header {
-  background-color:rgb(0, 0, 0);
+  background-color:rgba(0, 0, 0, 0);
   mix-blend-mode:difference;
   height: 10vh;
   width: 100%;
