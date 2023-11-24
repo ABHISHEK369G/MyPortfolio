@@ -38,6 +38,15 @@ body {
   width: 100%;
 }
 
+html,body {
+  width: 100%;
+  overscroll-behavior: none;
+  min-height: 100%;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
 #main {
   position: relative;
   overflow: hidden;
