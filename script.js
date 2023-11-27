@@ -104,6 +104,7 @@ gsap.from(".p2container h1", {
   scrollTrigger: {
     trigger: ".p2container h1",
     start: "top 75%",
+    end:"top 25%",
     // markers:true ,
     scrub: 1,
   },
@@ -137,8 +138,8 @@ gsap.from(".p3Container h1:nth-child(4)", {
   opacity: 0,
   scrollTrigger: {
     trigger: ".p3Container h1:nth-child(4)",
-    start: "top 58%",
-    end: "top 45%",
+    start: "top 70%",
+    end: "top 60%",
     // markers:true ,
     scrub: 1,
   },
@@ -148,8 +149,8 @@ gsap.from(".p3Container h1:nth-child(6)", {
   opacity: 0,
   scrollTrigger: {
     trigger: ".p3Container h1:nth-child(6)",
-    start: "top 80%",
-    end: "top 50%",
+    start: "top 96%",
+    end: "top 80%",
     // markers:true ,
     scrub: 1,
   },
@@ -161,8 +162,8 @@ gsap.from(".skill", {
   duration: 4,
   scrollTrigger: {
     trigger: ".skill",
-    start: "top 55%",
-    end: "top 25%",
+    start: "top 58%",
+    end: "top 30%",
     // markers:true ,
     scrub: 1,
   },
@@ -174,8 +175,8 @@ gsap.from(".wskill", {
   duration: 4,
   scrollTrigger: {
     trigger: ".wskill",
-    start: "top 90%",
-    end: "top 70%",
+    start: "top 95%",
+    end: "top 89%",
     // markers:true ,
     scrub: 1,
   },

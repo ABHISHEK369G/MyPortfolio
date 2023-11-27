@@ -217,9 +217,9 @@ a {
   display: flex;
   flex-direction: column;
   align-items: start;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   text-align: start;
-  letter-spacing: 3px;
+  letter-spacing: 2.2px;
 }
 
 .p2container h1:nth-child(1) {
@@ -234,6 +234,10 @@ a {
 .p2container span {
   color: rgb(138, 138, 138);
   filter: drop-shadow(0 0 20px rgb(143, 138, 138));
+}
+.p2container h1:nth-child(3) span:nth-child(1) {
+  color: rgb(173, 199, 255);
+  /* filter: drop-shadow(0 0 10px rgb(52, 123, 255)); */
 }
 .p2container h1:nth-last-child(1) span:nth-last-child(1) {
   color: rgb(243, 212, 255);
@@ -509,10 +513,12 @@ a {
   .p2container {
     text-align: center;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     letter-spacing: 0.5px;
+    
   }
 
+  
   .page2 {
     min-height: 100vh;
   }
@@ -528,6 +534,14 @@ a {
   }
   .p3Container h1 {
     font-size: 1.2rem;
+    
+  }
+  
+  .p3Container>h1:nth-child(2),h1:nth-child(4),h1:nth-child(6){
+    margin-top: 1.5em;
+  }
+  .p2container>h1{
+    margin: 0px;
   }
   .skill {
     margin: 0.4rem;
