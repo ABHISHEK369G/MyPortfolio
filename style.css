@@ -1,8 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Borel&family=Caveat:wght@700&family=Ysabeau+SC:wght@100;200;300;400;500;600;700;800&display=swap");
+
+  @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
+
 @import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
 /* spread word */
 /* font-family: 'Borel', cursive;
- font-family: 'Caveat', cursive;
+ font-family: 'Caveat';
  font-family: 'Ysabeau SC', sans-serif; */
 
 @import url("https://fonts.googleapis.com/css2?family=Aldrich&display=swap");
@@ -16,14 +18,16 @@
 /* font-family: 'Press Start 2P', cursive; */
 
 @import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-
 /* font-family: 'Black Ops One', cursive; */
 
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
-/* font-family: 'Permanent Marker', cursive; */
+/* font-family: 'Permanent Marker'; */
 
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap");
 /* font-family: 'Orbitron', sans-serif; */
+
+  @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+  /* font-family: 'Kalam'; */
 
 * {
   margin: 0;
@@ -92,6 +96,13 @@ a {
 }
 .logo h1 {
   font-size: 1.5rem;
+  background:linear-gradient(to bottom,white,rgb(88, 88, 88)) text;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color: transparent;
+  color:transparent;
+  text-fill-color:transparent;
+  background-clip: text;
+  font-weight: 900;
 }
 
 .link {
@@ -142,7 +153,7 @@ a {
   animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-  animation-direction: alternate;
+  animation-direction: alternate-reverse;
   transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
@@ -175,17 +186,18 @@ a {
   line-height: 6vw;
 }
 .content h1 {
-  filter: drop-shadow(0 0 8px rgb(186, 102, 255));
   color: rgb(223, 223, 223);
   letter-spacing: 0.5rem;
   font-weight: 500;
   font-size: 8.5vw;
   font-family: "Black Ops One", cursive;
-  animation-name: textAnimation;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-  animation-direction: alternate;
+  background:linear-gradient(to bottom,white,gray,black) text;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color: transparent;
+  color:transparent;
+  text-fill-color:transparent;
+  background-clip: text;
+
 }
 
 @keyframes textAnimation {
@@ -220,32 +232,66 @@ a {
   font-size: 1.2rem;
   text-align: start;
   letter-spacing: 2.2px;
+  
 }
 
 .p2container h1:nth-child(1) {
-  color: rgb(186, 102, 255) !important;
-  filter: drop-shadow(0 0 20px rgb(186, 102, 255));
+  background:linear-gradient(45deg,rgb(0, 119, 255),white) text;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color: transparent;
+  color:transparent;
+  text-fill-color:transparent;
+  background-clip: text;
+  font-weight: 900;
+
 }
 
 .p2container h1:nth-child(2) {
-  color: rgb(220, 177, 255) !important;
-  filter: drop-shadow(0 0 20px rgb(220, 177, 255));
+  background:linear-gradient(45deg,white,rgb(255, 0, 255),rgb(0, 119, 255)) text;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color: transparent;
+  color:transparent;
+  text-fill-color:transparent;
+  background-clip: text;
+  font-weight: 900;
+  
 }
 .p2container span {
-  color: rgb(138, 138, 138);
-  filter: drop-shadow(0 0 20px rgb(143, 138, 138));
+  background:linear-gradient(to bottom,white,rgb(75, 75, 75)) text;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color: transparent;
+  color:transparent;
+  text-fill-color:transparent;
+  background-clip: text;
 }
 .p2container h1:nth-child(3) span:nth-child(1) {
-  color: rgb(173, 199, 255);
-  /* filter: drop-shadow(0 0 10px rgb(52, 123, 255)); */
+  background:linear-gradient(45deg,white,yellow,rgb(212, 0, 255),rgb(0, 119, 255),rgb(0, 119, 255)) text;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color: transparent;
+  color:transparent;
+  text-fill-color:transparent;
+  background-clip: text;
+  font-weight: 900;
+  
 }
 .p2container h1:nth-last-child(1) span:nth-last-child(1) {
-  color: rgb(243, 212, 255);
-  filter: drop-shadow(0 0 20px rgb(186, 102, 255));
+  background:linear-gradient(45deg,white,rgb(0, 119, 255)) text;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color: transparent;
+  color:transparent;
+  text-fill-color:transparent;
+  background-clip: text;
+  font-weight: 700;
+  font-family: 'Caveat';
+  font-family: 'Kalam';
 }
 .p2container h1:nth-last-child(2) span:nth-last-child(2) {
-  color: rgb(143, 138, 138) !important;
-  filter: drop-shadow(0 0 20px rgb(143, 138, 138));
+  background:linear-gradient(to bottom,white,rgb(75, 75, 75)) text;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color: transparent;
+  color:transparent;
+  text-fill-color:transparent;
+  background-clip: text;
 }
 
 
@@ -266,9 +312,26 @@ a {
   /* background-color: red; */
 }
 
+.p3Container>h1 {
+  background:linear-gradient(45deg,white,rgb(0, 119, 255),rgb(0, 119, 255),rgb(0, 119, 255),rgb(0, 119, 255)) text;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color: transparent;
+  color:transparent;
+  text-fill-color:transparent;
+  background-clip: text;
+  font-weight: 700;
+}
+
 .p3title h1 {
   font-size: 3rem;
   margin-bottom: 50px;
+  background:linear-gradient(to bottom,white,rgb(88, 88, 88)) text;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color: transparent;
+  color:transparent;
+  text-fill-color:transparent;
+  background-clip: text;
+  
 }
 .skills {
   display: flex;
@@ -308,6 +371,7 @@ a {
   align-items: center;
   justify-content: center;
   border-radius: 5px;
+  font-weight: 800;
   margin: 1rem 1rem 1rem 0;
   height: 3rem;
   width: 10rem;
@@ -329,6 +393,14 @@ a {
 .page4 h1 {
   font-size: 3rem;
   margin-bottom: 50px;
+  background:linear-gradient(to bottom,white,rgb(75, 75, 75)) text;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color: transparent;
+  color:transparent;
+  text-fill-color:transparent;
+  background-clip: text;
+  font-weight: 900;
+  
 }
 
 .projects {
@@ -384,7 +456,8 @@ a {
 }
 .pright h1 a {
   text-decoration: none;
-  color: black;
+  -webkit-text-fill-color: black!important;
+  color: black!important;
   transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
 .pright h1 a:hover {
@@ -417,6 +490,7 @@ a {
   color: white;
 }
 
+
 .footer {
   font-size: 1.5rem;
   font-weight: 400;
@@ -429,9 +503,19 @@ a {
   text-align: center;
 }
 
-.footer h1 span:nth-child(1) {
-  color: black;
+.footer h1 {
+  background:linear-gradient(45deg,gray,white,white) text;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color: transparent;
+  color:transparent;
+  text-fill-color:transparent;
+  background-clip: text;
+}
 
+.footer h1 span:nth-child(1) {
+  color: black !important;
+  
+  -webkit-text-fill-color: black !important;
   -webkit-text-stroke: 1px rgb(0, 162, 255);
 }
 
@@ -486,6 +570,9 @@ a {
   .page1 {
     background-color: black;
     color: white;
+  }
+  .logo h1 {
+    font-size: 0.8rem;
   }
   .hero {
     padding-top: 8rem;

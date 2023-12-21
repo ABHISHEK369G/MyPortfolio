@@ -72,7 +72,7 @@ t2.from(".content h1", {
 //animation for name
 gsap.to(".content h1:nth-child(1)", {
   x: -800,
-  duration: 5,
+  duration: 4,
 
   scrollTrigger: {
     trigger: ".content h1:nth-child(1)",
@@ -85,7 +85,7 @@ gsap.to(".content h1:nth-child(1)", {
 
 gsap.to(".content h1:nth-child(2)", {
   x: 800,
-  duration: 5,
+  duration: 4,
 
   scrollTrigger: {
     trigger: ".content h1:nth-child(2)",
@@ -93,8 +93,8 @@ gsap.to(".content h1:nth-child(2)", {
     end: "top 2%",
     // markers:true ,
     scrub: 1,
-  },
-});
+  }
+}  );
 //animation for aboutus ==============================
 gsap.from(".p2container h1", {
   y: 100,
