@@ -247,7 +247,7 @@ a {
 }
 
 .p2container h1:nth-child(2) {
-  background:linear-gradient(45deg,white,rgb(255, 0, 255),rgb(0, 119, 255)) text;
+  background:linear-gradient(45deg,white,rgb(0, 119, 255)) text;
   -webkit-background-clip:text;
   -webkit-text-fill-color: transparent;
   color:transparent;
@@ -265,7 +265,8 @@ a {
   background-clip: text;
 }
 .p2container h1:nth-child(3) span:nth-child(1) {
-  background:linear-gradient(45deg,white,yellow,rgb(212, 0, 255),rgb(0, 119, 255),rgb(0, 119, 255)) text;
+  background:linear-gradient(45deg,white,yellow,rgb(212, 0, 255),rgb(0, 119, 255)) text;
+  /* background: linear-gradient(45deg,white,rgb(236, 0, 236),rgb(0, 183, 255)); */
   -webkit-background-clip:text;
   -webkit-text-fill-color: transparent;
   color:transparent;
@@ -313,7 +314,8 @@ a {
 }
 
 .p3Container>h1 {
-  background:linear-gradient(45deg,white,rgb(0, 119, 255),rgb(0, 119, 255),rgb(0, 119, 255),rgb(0, 119, 255)) text;
+  
+  background: linear-gradient(to right,white,gray,gray);
   -webkit-background-clip:text;
   -webkit-text-fill-color: transparent;
   color:transparent;
