@@ -103,7 +103,7 @@ gsap.from(".p2container h1", {
   stagger: 0.3,
   scrollTrigger: {
     trigger: ".p2container h1",
-    start: "top 75%",
+    start: "top 80%",
     end:"top 25%",
     // markers:true ,
     scrub: 1,

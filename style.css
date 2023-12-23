@@ -96,7 +96,7 @@ a {
 }
 .logo h1 {
   font-size: 1.5rem;
-  background:linear-gradient(to bottom,white,rgb(88, 88, 88)) text;
+  background:linear-gradient(45deg,rgb(128, 128, 128),rgba(255, 255, 255, 0.904)) text;
   -webkit-background-clip:text;
   -webkit-text-fill-color: transparent;
   color:transparent;
@@ -154,7 +154,7 @@ a {
   animation-iteration-count: infinite;
   animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
   animation-direction: alternate-reverse;
-  transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
 }
 
 @keyframes circleAnimation {
@@ -236,18 +236,17 @@ a {
 }
 
 .p2container h1:nth-child(1) {
-  background:linear-gradient(45deg,rgb(0, 119, 255),white) text;
+  background:linear-gradient(45deg,rgb(0, 132, 255),rgba(221, 0, 221, 0.849)) text;
   -webkit-background-clip:text;
   -webkit-text-fill-color: transparent;
   color:transparent;
   text-fill-color:transparent;
   background-clip: text;
   font-weight: 900;
-
 }
 
 .p2container h1:nth-child(2) {
-  background:linear-gradient(45deg,white,rgb(0, 119, 255)) text;
+  background:linear-gradient(45deg,rgb(221, 0, 221),rgba(0, 183, 255, 0.795)) text;
   -webkit-background-clip:text;
   -webkit-text-fill-color: transparent;
   color:transparent;
@@ -265,7 +264,7 @@ a {
   background-clip: text;
 }
 .p2container h1:nth-child(3) span:nth-child(1) {
-  background:linear-gradient(45deg,white,yellow,rgb(212, 0, 255),rgb(0, 119, 255)) text;
+  background:linear-gradient(45deg,rgba(255, 51, 0, 0.938),rgba(255, 251, 0, 0.815)) text;
   /* background: linear-gradient(45deg,white,rgb(236, 0, 236),rgb(0, 183, 255)); */
   -webkit-background-clip:text;
   -webkit-text-fill-color: transparent;
@@ -276,7 +275,7 @@ a {
   
 }
 .p2container h1:nth-last-child(1) span:nth-last-child(1) {
-  background:linear-gradient(45deg,white,rgb(0, 119, 255)) text;
+  background:linear-gradient(45deg,rgba(221, 0, 221, 0.89),rgb(0, 119, 255)) text;
   -webkit-background-clip:text;
   -webkit-text-fill-color: transparent;
   color:transparent;
@@ -327,7 +326,7 @@ a {
 .p3title h1 {
   font-size: 3rem;
   margin-bottom: 50px;
-  background:linear-gradient(to bottom,white,rgb(88, 88, 88)) text;
+  background:linear-gradient(45deg,rgb(0, 132, 255),rgba(221, 0, 221, 0.911),rgba(221, 0, 221, 0.911),rgba(221, 0, 221, 0.911),rgba(221, 0, 221, 0.911),rgba(221, 0, 221, 0.911),rgba(221, 0, 221, 0.911)) text;
   -webkit-background-clip:text;
   -webkit-text-fill-color: transparent;
   color:transparent;
@@ -354,9 +353,7 @@ a {
 .skill:hover {
   box-shadow: 0 0 10px rgb(255, 255, 255);
 }
-.wskill:hover {
-  box-shadow: 0 0 10px rgb(255, 255, 255);
-}
+
 .skill img {
   width: 100%;
   height: 100%;
@@ -373,14 +370,39 @@ a {
   align-items: center;
   justify-content: center;
   border-radius: 5px;
-  font-weight: 800;
+  font-weight: 500;
   margin: 1rem 1rem 1rem 0;
   height: 3rem;
   width: 10rem;
   color: black;
   background-color: white;
-  transition: box-shadow 1s cubic-bezier(0.19, 1, 0.22, 1);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: color 2s cubic-bezier(0.19, 1, 0.22, 1);
   /* box-shadow: 0 0 10px rgb(235, 84, 255); */
+}
+
+.wskill::after{
+position: absolute;
+content: "";
+bottom: 0;
+left: 0;
+width: 100% ;
+height: 0%;
+border-radius: 50% 50% 0 0 ;
+z-index: -1;
+transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.wskill:hover:after{
+  height: 200%;
+  background-color: black;
+
+}
+.wskill:hover{
+  color: white;
+  border: 1px solid white;
 }
 
 .page4 {
@@ -395,7 +417,7 @@ a {
 .page4 h1 {
   font-size: 3rem;
   margin-bottom: 50px;
-  background:linear-gradient(to bottom,white,rgb(75, 75, 75)) text;
+  background:linear-gradient(45deg,rgb(0, 132, 255),rgba(221, 0, 221, 0.911),rgba(221, 0, 221, 0.911),rgba(221, 0, 221, 0.911),rgba(221, 0, 221, 0.911),rgba(221, 0, 221, 0.911),rgba(221, 0, 221, 0.911)) text;
   -webkit-background-clip:text;
   -webkit-text-fill-color: transparent;
   color:transparent;
@@ -506,7 +528,7 @@ a {
 }
 
 .footer h1 {
-  background:linear-gradient(45deg,gray,white,white) text;
+  background:linear-gradient(45deg,rgba(255, 51, 0, 0.966),rgba(255, 251, 0, 0.856),white,white) text;
   -webkit-background-clip:text;
   -webkit-text-fill-color: transparent;
   color:transparent;
@@ -574,7 +596,8 @@ a {
     color: white;
   }
   .logo h1 {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+    font-weight: 900;
   }
   .hero {
     padding-top: 8rem;
