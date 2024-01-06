@@ -439,7 +439,7 @@ transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
 .project {
   background-color: #ffffff;
   width: 24%;
-  height: 32rem;
+  aspect-ratio: 9/17 auto;
   border-radius: 20px;
   margin: 10px;
   overflow: hidden;
@@ -452,8 +452,10 @@ transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .pleft {
-  height: 31%;
+  /* height: 31%; */
+
   width: 100%;
+  aspect-ratio: 16/9;
   border-radius: 14px;
   overflow: hidden;
   box-shadow: 0 0 8px gray;
@@ -546,6 +548,83 @@ transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
 .footer h1 a:nth-child(2) span:nth-child(1) {
   color: black;
   -webkit-text-stroke: 1px rgb(255, 255, 255) !important;
+}
+
+@media only screen and (device-width: 1024px) and (device-height: 1366px) {
+  .page1 {
+    background-color: black;
+    color: white;
+  }
+  .hero {
+    gap: 18px;
+    padding-top: 5rem;
+  }
+  .circle {
+    width: 65vw;
+    height: 65vw;
+  }
+  .minicircle {
+    width: 40vw;
+    height: 40vw;
+    border: 3vw solid rgb(255, 255, 255);
+  }
+  .content {
+    line-height: 11vw;
+  }
+  .content h1 {
+    font-size: 13vw;
+  }
+
+  .page2 {
+    min-height: 100vh;
+  }
+  .page3 {
+    min-height: 90vh;
+  }
+
+  .project {
+    width: 41%;
+  }
+
+  .footer {
+    font-size: 1.4rem;
+    letter-spacing: 11px;
+  }
+
+
+
+  /* my  */
+  .p2container{
+    font-size: 2.2rem;
+  }
+  .wskill{
+    width: 18rem;
+    height:5rem;
+    font-size: 2rem;
+  }
+
+  .p3title h1{
+    font-size: 6rem;
+  }
+  .p3Container>h1{
+    font-size: 3rem;
+  }
+  .skill{
+    height: 6rem;
+  }
+
+  .page4 h1{
+    font-size: 6rem;
+  }
+  .pright h1{
+    font-size: 3.5rem;
+  }
+  .pright ul li{
+    font-size: 2rem;
+  }
+  .footer h1{
+  font-size: 5rem;
+  }
 }
 
 @media screen and (max-width: 1023px) {
@@ -670,10 +749,11 @@ transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
   }
   .project {
     width: 80%;
-    height: 32rem;
+    /* height: 32rem; */
   }
   .footer {
     font-size: 0.8rem;
     letter-spacing: 5px;
   }
 }
+
